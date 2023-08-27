@@ -7,8 +7,9 @@
 var arr=[]
 $(function ()
 {
-	$(".about").ready(arr.push.bind (arr));
-	console.log (arr);
+	$(".about").on ("focus", function(eevent){
+		arr.push (eevent);
+	});
 })
 </script>
 	</head>
