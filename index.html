@@ -7,8 +7,9 @@
 var arr=[]
 $(function ()
 {
-	$(".about").on ("focus", function(eevent){
-		arr.push (eevent);
+	$(".about").on ("mouseover", function(){
+		arr.push (this);
+		var oops=arr.map ((x)=>$(x));
 	});
 })
 </script>
